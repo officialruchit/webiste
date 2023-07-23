@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        margin-inline: auto;
+        padding-inline: auto;
+        max-width: 80%;
+      }
+      .flex {
+        display: flex;
+        align-items: center;
+      }
+      .item-main {
+        justify-content: space-between;
+      }
+      .ul-item {
+        gap: 40px;
+      }
+      .ul-item a {
+        text-decoration: none;
+        color: black;
+      }
+      .ul-item li {
+        list-style: none;
+      }
+      .icon i {
+        font-size: 18px;
+        font-weight: 400;
+        margin-right: 10px;
+      }
+      .main {
+        position: fixed;
+        width: 100%;
+      }
+      .home {
+        width: 100%;
+        height: 100vh;
+        background-image: url(img/slader-0.jpg);
+        background-position: center;
+        background-size: cover;
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+      }
+      .home-text h4 {
+        color: black;
+        font-size: 60px;
+        font-weight: 600;
+        letter-spacing: 1;
+        text-transform: capitalize;
+
+        margin: 10px 0;
+      }
+      .home-text {
+        position: relative;
+        right: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <div class="container flex item-main">
+        <a href=""><img src="img/logo-header.png" alt="" srcset="" /></a>
+        <ul class="flex ul-item">
+          <li><a href="#">home</a></li>
+          <li><a href="#">vatelog</a></li>
+          <li><a href="#">blogs</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">about</a></li>
+        </ul>
+        <div class="icon">
+          <a href="#"><i class="fa-thin fa-user"></i></a>
+          <a href="#"><i class="bx bx-cart"></i></a>
+          <a href="#"><i class="bx bx-menu"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="home">
+      <div class="container home-text">
+        <h4>get up to 10% off</h4>
+        <h1>noise wireless <br />headphomes</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis,
+          nobis dolor. Fugit, maiores?
+        </p>
+        <div class="cutton">
+          <a href="#">shop now</a>
+          <a href="#">discover now</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
